@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    margin: 2em;
+    cover
+    font-family: "Open Sans", sans-serif;
+    /* background-color: hsl(0, 0%, 15%); */
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    overflow: hidden;
+    margin: 20px auto;
+}
+.keypad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calc-body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: hsl(210, 4%, 22%);
+    box-shadow: 10px 8px 29px 0px hsl(0, 1%, 14%),
+    inset 6px 4px 10px 0px hsla(0, 0%, 100%, 0.7);
+}
+.screen{
+    display: flex;
+    background-color: aliceblue;
+    height: 50px;
+    width: 90%;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+.screen > p{
+    position: relative;
+    font-size: 2em;
+    font-family:"Silkscreen", sans-serif;
+    font-kerning: 1px;
+}
+.calc-btn {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 3px;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Orbitron";
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms ease-in-out;
+    box-shadow: inset 20px 10px 10px -19px #FFFFFF, 
+    inset -16px -7px 15px 0px hsla(230, 76%, 27%, 0.4)
+}
+.calc-btn:hover{
+    color: #cdcdcd;
+}
+.calc-btn:active{
+    transform: scale(.9);
+    box-shadow: inset 20px 10px 10px -19px hsla(230, 76%, 27%, 0.4), 
+    inset -16px -7px 15px 0px hsla(230, 76%, 27%, 0.4)
+}
+#equals{
+    height: 2em;
+    width: 10em;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+.icon{
+    font-size: .8em;
+}
+button{
+    border: 0;
+    background-color: orangered;
+}
+.number{
+    background-color: hsl(240, 50%, 15%);
+}
+.light-gray{
+    background-color: #5b5c5f;
+}
+hr{
+    margin: 20px auto 0px auto;
+    width: 500px;
+    border: 2px solid #5b5c5f;
+    border-radius: 50%;
+}
+.history{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    color: rgb(191, 85, 85);
+    justify-content:flex-end;
+    text-align: right;
+    margin: 0 auto;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+li{
+    list-style: none;
+}
