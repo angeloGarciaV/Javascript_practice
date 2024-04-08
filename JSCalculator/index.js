@@ -48,7 +48,11 @@ function calculator() {
       nums = str.split("*");
       nums = nums.map((number) => Number(number));
       res = nums.reduce(calc[2]);
-      newItem.textContent = nums.join(" * ") + " = " + res;
+      if (isFloat(res)) {
+        newItem.textContent = nums.join(" * ") + " = " + res.toFixed(2);
+      } else {
+        newItem.textContent = nums.join(" * ") + " = " + res;
+      }
       history.insertBefore(newItem, history.firstChild);
       if (isFloat(res)) {
         return res.toFixed(2);
@@ -59,7 +63,11 @@ function calculator() {
       nums = str.split("/");
       nums = nums.map((number) => Number(number));
       res = nums.reduce(calc[3]);
-      newItem.textContent = nums.join(" / ") + " = " + res;
+      if (isFloat(res)) {
+        newItem.textContent = nums.join(" / ") + " = " + res.toFixed(2);
+      } else {
+        newItem.textContent = nums.join(" / ") + " = " + res;
+      }
       history.insertBefore(newItem, history.firstChild);
       if (isFloat(res)) {
         return res.toFixed(2);

@@ -1,7 +1,7 @@
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
-const apiKey = "3107e3f5123379ff9832a30d4793d533";
+const apiKey = "";
 
 getJoke();
 
