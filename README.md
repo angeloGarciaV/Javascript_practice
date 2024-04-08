@@ -9,9 +9,10 @@ Learning and practicing javascript concepts.
 
 Simple javascript calculator that calculates simple equations and keeps a short history.
 
-![JSCalculator](image.png)
+![JSCalculator](./images/image.png)
 
 ---
 
 ### [WeatherAppJS](./WeatherAppJS/)
-App that gives weather information using the OpenWeather API
+
+App that gives weather information using the OpenWeather API.
