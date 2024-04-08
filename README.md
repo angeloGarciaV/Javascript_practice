@@ -9,8 +9,6 @@ Learning and practicing javascript concepts.
 
 Simple javascript calculator that calculates simple equations and keeps a short history.
 
-![JSCalculator](./images/image.png)
-
 ---
 
 ### [WeatherAppJS](./WeatherAppJS/)
