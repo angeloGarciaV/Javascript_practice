@@ -1,0 +1,91 @@
+html{
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://static.scientificamerican.com/sciam/cache/file/6B2730C8-B0D0-485F-A0618F3954CF58D8_source.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weatherForm {
+    margin: 20px;
+}
+.cityInput{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(15, 60%, 70%);
+    color: hsl(15, 60%, 15%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover{
+    background-color: hsl(15, 60%, 50%);
+    color: hsl(15, 60%, 5%);
+}
+.card{
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, .75);
+    margin-bottom: 25px;
+}
+.jokeDisplay{
+    font-size: 2.5rem;
+    margin: 25px;
+    text-align: center;
+    color: hsla(0, 0%, 0%, .35);
+}
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.descDisplay{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+.weatherEmoji{
+    margin: 0;
+    font-size: 7.5rem;
+}
+.errDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, .75);
+}
+#wrapper{
+    min-width: 100%;
+}
