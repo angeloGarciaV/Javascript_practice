@@ -2,7 +2,7 @@
 
 Practicing UI in Javascript.
 
-![Current look](image.png)
+![Current look](./images/image.png)
 
 lady1.png comes from [JJ99](https://jayjay99.itch.io) on itch.io.
 
