@@ -112,8 +112,11 @@ const idCardclass = document.getElementsByClassName("IdDivClass");
 
 //ID Styles
 const picDivStyle = {
-  backgroundImage: "url('images/lady1.png')",
+  backgroundImage: `url('./images/portraits/_${
+    Math.floor(Math.random() * 80) + 1
+  }.png')`,
 };
+console.log(picDivStyle);
 for (let property in picDivStyle) {
   portraitDiv.style[property] = picDivStyle[property];
 }
